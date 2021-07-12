@@ -3,7 +3,6 @@ import s from './App.module.css'
 function App() {
 
   // To implement
-  // - Automatic Zoom Meetings
   // - Automatic scheduling on teacher calendar
   // - Cookies are not enabled in current enviroment in incognito mode
 
@@ -16,6 +15,7 @@ function App() {
     timeZone: 'America/Los_Angeles',
     emailTeacher: 'lpage@example.com',
     emailStudent: 'sbrin@example.com',
+    platform: 'meet'
   }
 
   function randomID() {
@@ -77,8 +77,8 @@ function App() {
                 { 'method': 'popup', 'minutes': 10 }
               ]
             },
-            conferenceData: {
-              createRequest: { requestId: randomID()}
+            'conferenceData': {
+              'createRequest': { 'requestId': randomID()},
             }
           }
 
