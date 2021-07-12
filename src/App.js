@@ -1,4 +1,6 @@
 import s from './App.module.css'
+import {CLIENT_ID, API_KEY} from './config'
+
 
 function App() {
 
@@ -14,8 +16,7 @@ function App() {
     endDate: '2021-07-20T17:00:00-07:00',
     timeZone: 'America/Los_Angeles',
     emailTeacher: 'lpage@example.com',
-    emailStudent: 'sbrin@example.com',
-    platform: 'meet'
+    emailStudent: 'sbrin@example.com'
   }
 
   function randomID() {
@@ -29,10 +30,6 @@ function App() {
 
   // Declaramos la variable gapi
   var gapi = window.gapi;
-
-  // Client ID and API key from the Developer Console
-  var CLIENT_ID = '702751280958-dtas92vf0iflap0t1hvu54geralg15q6.apps.googleusercontent.com';
-  var API_KEY = 'AIzaSyCX-oxDDfuxKBWkiAjaTHTy4P1zS-K-wtg';
 
   // Array of API discovery doc URLs for APIs used by the quickstart
   var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
